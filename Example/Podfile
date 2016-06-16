@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CYGridView_Example' do
+  pod 'CYGridView', :path => '../'
+
+  target 'CYGridView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
