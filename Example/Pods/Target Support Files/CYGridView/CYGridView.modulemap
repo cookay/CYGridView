@@ -1,0 +1,6 @@
+framework module CYGridView {
+  umbrella header "CYGridView-umbrella.h"
+
+  export *
+  module * { export * }
+}

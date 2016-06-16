@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0080556B3289ED774384226359F864D8 /* CYGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F320DBBF247D33EF98A8B7F31DFBB /* CYGridView-dummy.m */; };
+		452FF10ECD73A46E9487F7DEF2F58EDE /* Pods-CYGridView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 309986A31C9D77ED86787F3E1BAB655B /* Pods-CYGridView_Example-dummy.m */; };
+		9C306617EFE9ACFC439EE02F4B77869A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		B62F7A0F236D7E5C8DFC3400DBE710E3 /* CYGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ABE86B1E1DCF3DF6D635F9F037B178 /* CYGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C468F26DF6BAB13672B8A98BE7B75714 /* Pods-CYGridView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4D57D82A53236C307EF93D330B4A85 /* Pods-CYGridView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7EC119371CB56870B666AAF66001EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		EB077483AB70DD9164E2C7ED98819284 /* CYGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93D639F677F110657560E390D0330DF /* CYGridView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AD47A4B7F38BCC0DB5DD37E73E07942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 185B25583EB85B2ECE841A5D219B991A;
+			remoteInfo = CYGridView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		020614ED4687FFC3CBD10B70270B6D51 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03ABE86B1E1DCF3DF6D635F9F037B178 /* CYGridView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYGridView-umbrella.h"; sourceTree = "<group>"; };
+		1D4F320DBBF247D33EF98A8B7F31DFBB /* CYGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYGridView-dummy.m"; sourceTree = "<group>"; };
+		2A66FD99B7864FB05F875A843213CBBA /* Pods-CYGridView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CYGridView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		309986A31C9D77ED86787F3E1BAB655B /* Pods-CYGridView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CYGridView_Example-dummy.m"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4A969E832961DA0E552AE3948445814A /* Pods-CYGridView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CYGridView_Example.modulemap"; sourceTree = "<group>"; };
+		56916B48F851049E86D09D9C266B6C17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56C6FA430AC182CEEF6B3CBC679F0E94 /* Pods-CYGridView_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CYGridView_Example-resources.sh"; sourceTree = "<group>"; };
+		6AF47F76DB89F6A69FDF049D17347DF1 /* Pods-CYGridView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CYGridView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D7B04985B7532E4FC9D75F6FCA38228 /* Pods-CYGridView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CYGridView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		70B66E74921C42C71F2F7C7709DE0131 /* Pods_CYGridView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CYGridView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C2E8CFF669FD6D48907B8905164A2E /* Pods-CYGridView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CYGridView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A9700632F85B7A7FE343736849C71C89 /* Pods-CYGridView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CYGridView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B9A3BF3AD2FC4433C846F4CB149C88B6 /* CYGridView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CYGridView-prefix.pch"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C93D639F677F110657560E390D0330DF /* CYGridView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CYGridView.swift; sourceTree = "<group>"; };
+		CA4D57D82A53236C307EF93D330B4A85 /* Pods-CYGridView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CYGridView_Example-umbrella.h"; sourceTree = "<group>"; };
+		F1FCC56CABD5F2DF1305F7F7E8BA9C98 /* CYGridView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CYGridView.xcconfig; sourceTree = "<group>"; };
+		FBFCE0C6F5ABCE26D0788B6E24E74B61 /* CYGridView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CYGridView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9EF28F19D860267B6C53D8757C633B /* CYGridView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CYGridView.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		127FA8FBA5F1584204422705602EEFEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EC119371CB56870B666AAF66001EF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5895F34079236FE9D7210C2F89E77392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C306617EFE9ACFC439EE02F4B77869A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C4926430D4B2477E84317667F7CD566 /* CYGridView */ = {
+			isa = PBXGroup;
+			children = (
+				CB5038ED735FC136EB833C8050EFA859 /* Classes */,
+			);
+			path = CYGridView;
+			sourceTree = "<group>";
+		};
+		385A228F945E3CFB3C8B756C57C72FEB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF9EF28F19D860267B6C53D8757C633B /* CYGridView.modulemap */,
+				F1FCC56CABD5F2DF1305F7F7E8BA9C98 /* CYGridView.xcconfig */,
+				1D4F320DBBF247D33EF98A8B7F31DFBB /* CYGridView-dummy.m */,
+				B9A3BF3AD2FC4433C846F4CB149C88B6 /* CYGridView-prefix.pch */,
+				03ABE86B1E1DCF3DF6D635F9F037B178 /* CYGridView-umbrella.h */,
+				020614ED4687FFC3CBD10B70270B6D51 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CYGridView";
+			sourceTree = "<group>";
+		};
+		63BB033D24166655F55B21972552BBBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBFCE0C6F5ABCE26D0788B6E24E74B61 /* CYGridView.framework */,
+				70B66E74921C42C71F2F7C7709DE0131 /* Pods_CYGridView_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A60C22353F6D317F723EF3AF17D904A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD0DCC74680ECAC6B37A81CD47053F97 /* CYGridView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				7A60C22353F6D317F723EF3AF17D904A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				63BB033D24166655F55B21972552BBBB /* Products */,
+				DD8C947F33451B595CC29FD55C5F0935 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		97D43483E5953BD6DF56433565152B40 /* Pods-CYGridView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				56916B48F851049E86D09D9C266B6C17 /* Info.plist */,
+				4A969E832961DA0E552AE3948445814A /* Pods-CYGridView_Example.modulemap */,
+				84C2E8CFF669FD6D48907B8905164A2E /* Pods-CYGridView_Example-acknowledgements.markdown */,
+				6AF47F76DB89F6A69FDF049D17347DF1 /* Pods-CYGridView_Example-acknowledgements.plist */,
+				309986A31C9D77ED86787F3E1BAB655B /* Pods-CYGridView_Example-dummy.m */,
+				A9700632F85B7A7FE343736849C71C89 /* Pods-CYGridView_Example-frameworks.sh */,
+				56C6FA430AC182CEEF6B3CBC679F0E94 /* Pods-CYGridView_Example-resources.sh */,
+				CA4D57D82A53236C307EF93D330B4A85 /* Pods-CYGridView_Example-umbrella.h */,
+				6D7B04985B7532E4FC9D75F6FCA38228 /* Pods-CYGridView_Example.debug.xcconfig */,
+				2A66FD99B7864FB05F875A843213CBBA /* Pods-CYGridView_Example.release.xcconfig */,
+			);
+			name = "Pods-CYGridView_Example";
+			path = "Target Support Files/Pods-CYGridView_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CB5038ED735FC136EB833C8050EFA859 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C93D639F677F110657560E390D0330DF /* CYGridView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DD8C947F33451B595CC29FD55C5F0935 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97D43483E5953BD6DF56433565152B40 /* Pods-CYGridView_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FD0DCC74680ECAC6B37A81CD47053F97 /* CYGridView */ = {
+			isa = PBXGroup;
+			children = (
+				1C4926430D4B2477E84317667F7CD566 /* CYGridView */,
+				385A228F945E3CFB3C8B756C57C72FEB /* Support Files */,
+			);
+			name = CYGridView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7C7B95C427A2820B6CA58C34D9E98AD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C468F26DF6BAB13672B8A98BE7B75714 /* Pods-CYGridView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E4DC9EFE776A50E8558126E2B84827 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62F7A0F236D7E5C8DFC3400DBE710E3 /* CYGridView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		185B25583EB85B2ECE841A5D219B991A /* CYGridView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B435655DDDB4CE764F94CF6BB3AEF0DE /* Build configuration list for PBXNativeTarget "CYGridView" */;
+			buildPhases = (
+				1CDBCAF36A9EA44CBDE7F84F532B1BC9 /* Sources */,
+				5895F34079236FE9D7210C2F89E77392 /* Frameworks */,
+				E0E4DC9EFE776A50E8558126E2B84827 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYGridView;
+			productName = CYGridView;
+			productReference = FBFCE0C6F5ABCE26D0788B6E24E74B61 /* CYGridView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6850FF66BD8C36C52709DA604E11188D /* Pods-CYGridView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF391B5BF797923AC7681A0445DCB91C /* Build configuration list for PBXNativeTarget "Pods-CYGridView_Example" */;
+			buildPhases = (
+				85D18ECABF9D80E6471D8A2DF3B9FE85 /* Sources */,
+				127FA8FBA5F1584204422705602EEFEE /* Frameworks */,
+				7C7B95C427A2820B6CA58C34D9E98AD7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9614195AC08858A9EECBC4F4B38CDCC0 /* PBXTargetDependency */,
+			);
+			name = "Pods-CYGridView_Example";
+			productName = "Pods-CYGridView_Example";
+			productReference = 70B66E74921C42C71F2F7C7709DE0131 /* Pods_CYGridView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 63BB033D24166655F55B21972552BBBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				185B25583EB85B2ECE841A5D219B991A /* CYGridView */,
+				6850FF66BD8C36C52709DA604E11188D /* Pods-CYGridView_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CDBCAF36A9EA44CBDE7F84F532B1BC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0080556B3289ED774384226359F864D8 /* CYGridView-dummy.m in Sources */,
+				EB077483AB70DD9164E2C7ED98819284 /* CYGridView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85D18ECABF9D80E6471D8A2DF3B9FE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452FF10ECD73A46E9487F7DEF2F58EDE /* Pods-CYGridView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9614195AC08858A9EECBC4F4B38CDCC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CYGridView;
+			target = 185B25583EB85B2ECE841A5D219B991A /* CYGridView */;
+			targetProxy = 8AD47A4B7F38BCC0DB5DD37E73E07942 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30CBE98BDB3355A159387922BAEA6549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D7B04985B7532E4FC9D75F6FCA38228 /* Pods-CYGridView_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CYGridView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CYGridView_Example/Pods-CYGridView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CYGridView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5A3517B1E568BA4F61E4DDF1BC7B2228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1FCC56CABD5F2DF1305F7F7E8BA9C98 /* CYGridView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CYGridView/CYGridView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CYGridView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CYGridView/CYGridView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CYGridView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		78DDA36A9B84D36F0D7589B82596CECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A66FD99B7864FB05F875A843213CBBA /* Pods-CYGridView_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CYGridView_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CYGridView_Example/Pods-CYGridView_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_CYGridView_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C47CD849C4D341CE1C15AA995C755B6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1FCC56CABD5F2DF1305F7F7E8BA9C98 /* CYGridView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CYGridView/CYGridView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CYGridView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CYGridView/CYGridView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CYGridView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF391B5BF797923AC7681A0445DCB91C /* Build configuration list for PBXNativeTarget "Pods-CYGridView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CBE98BDB3355A159387922BAEA6549 /* Debug */,
+				78DDA36A9B84D36F0D7589B82596CECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B435655DDDB4CE764F94CF6BB3AEF0DE /* Build configuration list for PBXNativeTarget "CYGridView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A3517B1E568BA4F61E4DDF1BC7B2228 /* Debug */,
+				C47CD849C4D341CE1C15AA995C755B6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

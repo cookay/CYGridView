@@ -1,0 +1,14 @@
+PODS:
+  - CYGridView (0.1.0)
+
+DEPENDENCIES:
+  - CYGridView (from `../`)
+
+EXTERNAL SOURCES:
+  CYGridView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CYGridView: e74f31462c95904856e937355a02faf928667ce5
+
+COCOAPODS: 0.39.0

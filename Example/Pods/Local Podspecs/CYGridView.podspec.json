@@ -1,0 +1,22 @@
+{
+  "name": "CYGridView",
+  "version": "0.1.0",
+  "summary": "A short description of CYGridView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/CYGridView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cookay": "cookay@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/CYGridView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CYGridView/Classes/**/*"
+}
