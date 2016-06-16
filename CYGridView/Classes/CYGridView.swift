@@ -16,11 +16,12 @@ public extension NSIndexPath {
 
 public class CYGridView: UIView {
     // MARK: - Types and Consts
-
+    typealias Box = (view: UIView, from: NSIndexPath, to: NSIndexPath)
     
     // MARK: - Properties
     private var cachedBoxSize: CGSize?
     private var cachedBoxFrames = Dictionary<NSIndexPath, CGRect>()
+    private var managedBoxs = Array<Box>()
     
     public let contentInsets: UIEdgeInsets
     public let vBoxSpace: CGFloat
@@ -36,7 +37,7 @@ public class CYGridView: UIView {
         self.hBoxSpace = hBoxSpace
         self.vBoxCount = vBoxCount
         self.hBoxCount = hBoxCount
-    
+        
         super.init(frame: frame)
     }
     
@@ -58,12 +59,12 @@ public class CYGridView: UIView {
             let width = (contentSize.width - self.hBoxSpace * CGFloat(self.hBoxCount - 1)) / CGFloat(self.hBoxCount)
             let height = (contentSize.height - self.vBoxSpace * CGFloat(self.vBoxCount - 1)) / CGFloat(self.vBoxCount)
             return CGSize(width: width, height: height)
-        } ()
+            } ()
     }
     
     public func boxFrame(at indexPath: NSIndexPath) -> CGRect? {
         return self.cachedBoxFrames[indexPath] ?? {
-            guard (0..<self.hBoxCount).contains(indexPath.x) && (0..<self.vBoxCount).contains(indexPath.y) else {
+            guard self.isValid(indexPath: indexPath) else {
                 return nil
             }
             
@@ -73,10 +74,12 @@ public class CYGridView: UIView {
             let frame = CGRect(origin: origin, size: self.boxSize())
             self.cachedBoxFrames[indexPath] = frame
             return frame
-        }()
+            }()
     }
     
-    public func boxFrame(from fromIndexPath: NSIndexPath, to toIndexPath: NSIndexPath) -> CGRect? {
+    public func boxFrame(from fromIndexPath: NSIndexPath, to toIndexPath: NSIndexPath? = nil) -> CGRect? {
+        let toIndexPath = toIndexPath ?? fromIndexPath
+        
         if let fromFrame = self.boxFrame(at: fromIndexPath), toFrame = self.boxFrame(at: toIndexPath) {
             return CGRectUnion(fromFrame, toFrame)
         } else {
@@ -84,5 +87,67 @@ public class CYGridView: UIView {
         }
     }
     
+    public func isManaged(view: UIView) -> Bool {
+        return self.managedBoxs.contains {
+            return $0.view == view
+        }
+    }
+    
+    public func isValid(indexPath indexPath: NSIndexPath) -> Bool {
+        return (0..<self.hBoxCount).contains(indexPath.x) && (0..<self.vBoxCount).contains(indexPath.y)
+    }
+    
+    public func addManaged(view view: UIView, from fromIndexPath: NSIndexPath, to toIndexPath: NSIndexPath? = nil) -> Bool {
+        guard !self.isManaged(view) else {
+            return false
+        }
+        guard let frame = self.boxFrame(from: fromIndexPath, to: toIndexPath) else {
+            return false
+        }
+        
+        let toIndexPath = toIndexPath ?? fromIndexPath
+        
+        self.addSubview(view)
+        view.frame = frame
+        self.managedBoxs.append(Box(view: view, from: fromIndexPath, to: toIndexPath))
+        
+        return true
+    }
+    
+    public func removeManaged(view view: UIView) -> Bool {
+        guard self.isManaged(view) else {
+            return false
+        }
+        
+        let boxIndex = self.managedBoxs.indexOf {
+            return $0.view == view
+        }
+        
+        view.removeFromSuperview()
+        self.managedBoxs.removeAtIndex(boxIndex!)
+        return true
+    }
+    
+    public func invalidateLayout() {
+        self.cachedBoxSize = nil
+        self.cachedBoxFrames.removeAll()
+    }
+    
+    public func clearManagedViews() {
+        for box in self.managedBoxs {
+            self.removeManaged(view: box.view)
+        }
+    }
+    
+    // MARK: - Life Cycle
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.invalidateLayout()
+        
+        for box in self.managedBoxs {
+            box.view.frame = self.boxFrame(from: box.from, to: box.to) ?? CGRectZero
+        }
+    }
     
 }
