@@ -1,18 +1,12 @@
-import UIKit
+//
+//  CYGridView.swift
+//  Pods
+//
+//  Created by zhangxi on 2016/6/16.
+//
+//
 
-public extension NSIndexPath {
-    public convenience init(forX x: Int, forY y: Int) {
-        self.init(indexes: [x, y], length: 2)
-    }
-    
-    public var x: Int {
-        return self.indexAtPosition(0)
-    }
-    
-    public var y: Int {
-        return self.indexAtPosition(1)
-    }
-}
+import UIKit
 
 public class CYGridView: UIView {
     // MARK: - Types and Consts
@@ -23,7 +17,7 @@ public class CYGridView: UIView {
     private var cachedBoxFrames = Dictionary<NSIndexPath, CGRect>()
     private var managedBoxs = Array<Box>()
     
-    public let contentInsets: UIEdgeInsets
+    public let contentInset: UIEdgeInsets
     public let vBoxSpace: CGFloat
     public let hBoxSpace: CGFloat
     public let vBoxCount: Int
@@ -31,8 +25,8 @@ public class CYGridView: UIView {
     
     // MARK: - I/F
     
-    public init(frame: CGRect, contentInsets: UIEdgeInsets, vBoxSpace: CGFloat, hBoxSpace: CGFloat, vBoxCount: Int, hBoxCount: Int) {
-        self.contentInsets = contentInsets
+    public init(frame: CGRect, contentInset: UIEdgeInsets, vBoxSpace: CGFloat, hBoxSpace: CGFloat, vBoxCount: Int, hBoxCount: Int) {
+        self.contentInset = contentInset
         self.vBoxSpace = vBoxSpace
         self.hBoxSpace = hBoxSpace
         self.vBoxCount = vBoxCount
@@ -46,9 +40,9 @@ public class CYGridView: UIView {
     }
     
     public func contentFrame() -> CGRect {
-        let origin = CGPoint(x: self.contentInsets.left, y: self.contentInsets.top)
-        let width = self.frame.width - self.contentInsets.left - self.contentInsets.right
-        let height = self.frame.height - self.contentInsets.top - self.contentInsets.bottom
+        let origin = CGPoint(x: self.contentInset.left, y: self.contentInset.top)
+        let width = self.frame.width - self.contentInset.left - self.contentInset.right
+        let height = self.frame.height - self.contentInset.top - self.contentInset.bottom
         let size = CGSize(width: width, height: height)
         return CGRect(origin: origin, size: size)
     }
@@ -62,14 +56,18 @@ public class CYGridView: UIView {
             } ()
     }
     
+    public func isValid(indexPath indexPath: NSIndexPath) -> Bool {
+        return (0..<self.hBoxCount).contains(indexPath.x) && (0..<self.vBoxCount).contains(indexPath.y)
+    }
+    
     public func boxFrame(at indexPath: NSIndexPath) -> CGRect? {
         return self.cachedBoxFrames[indexPath] ?? {
             guard self.isValid(indexPath: indexPath) else {
                 return nil
             }
             
-            let originX = self.contentInsets.left + (self.boxSize().width + self.hBoxSpace) * CGFloat(indexPath.x)
-            let originY = self.contentInsets.top + (self.boxSize().height + self.vBoxSpace) * CGFloat(indexPath.y)
+            let originX = self.contentInset.left + (self.boxSize().width + self.hBoxSpace) * CGFloat(indexPath.x)
+            let originY = self.contentInset.top + (self.boxSize().height + self.vBoxSpace) * CGFloat(indexPath.y)
             let origin = CGPoint(x: originX, y: originY)
             let frame = CGRect(origin: origin, size: self.boxSize())
             self.cachedBoxFrames[indexPath] = frame
@@ -91,10 +89,6 @@ public class CYGridView: UIView {
         return self.managedBoxs.contains {
             return $0.view == view
         }
-    }
-    
-    public func isValid(indexPath indexPath: NSIndexPath) -> Bool {
-        return (0..<self.hBoxCount).contains(indexPath.x) && (0..<self.vBoxCount).contains(indexPath.y)
     }
     
     public func addManaged(view view: UIView, from fromIndexPath: NSIndexPath, to toIndexPath: NSIndexPath? = nil) -> Bool {

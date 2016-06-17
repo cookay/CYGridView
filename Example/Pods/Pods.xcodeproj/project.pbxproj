@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0080556B3289ED774384226359F864D8 /* CYGridView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D4F320DBBF247D33EF98A8B7F31DFBB /* CYGridView-dummy.m */; };
+		331A16D01D13A27700FFD1F7 /* CYGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A16CF1D13A27700FFD1F7 /* CYGridLayout.swift */; };
+		331A16D21D13A2D300FFD1F7 /* NSIndexPath+CYGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331A16D11D13A2D300FFD1F7 /* NSIndexPath+CYGrid.swift */; };
 		452FF10ECD73A46E9487F7DEF2F58EDE /* Pods-CYGridView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 309986A31C9D77ED86787F3E1BAB655B /* Pods-CYGridView_Example-dummy.m */; };
 		9C306617EFE9ACFC439EE02F4B77869A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		B62F7A0F236D7E5C8DFC3400DBE710E3 /* CYGridView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03ABE86B1E1DCF3DF6D635F9F037B178 /* CYGridView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +34,8 @@
 		1D4F320DBBF247D33EF98A8B7F31DFBB /* CYGridView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CYGridView-dummy.m"; sourceTree = "<group>"; };
 		2A66FD99B7864FB05F875A843213CBBA /* Pods-CYGridView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CYGridView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		309986A31C9D77ED86787F3E1BAB655B /* Pods-CYGridView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CYGridView_Example-dummy.m"; sourceTree = "<group>"; };
+		331A16CF1D13A27700FFD1F7 /* CYGridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CYGridLayout.swift; sourceTree = "<group>"; };
+		331A16D11D13A2D300FFD1F7 /* NSIndexPath+CYGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSIndexPath+CYGrid.swift"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		4A969E832961DA0E552AE3948445814A /* Pods-CYGridView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-CYGridView_Example.modulemap"; sourceTree = "<group>"; };
 		56916B48F851049E86D09D9C266B6C17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				C93D639F677F110657560E390D0330DF /* CYGridView.swift */,
+				331A16CF1D13A27700FFD1F7 /* CYGridLayout.swift */,
+				331A16D11D13A2D300FFD1F7 /* NSIndexPath+CYGrid.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0080556B3289ED774384226359F864D8 /* CYGridView-dummy.m in Sources */,
+				331A16D01D13A27700FFD1F7 /* CYGridLayout.swift in Sources */,
+				331A16D21D13A2D300FFD1F7 /* NSIndexPath+CYGrid.swift in Sources */,
 				EB077483AB70DD9164E2C7ED98819284 /* CYGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

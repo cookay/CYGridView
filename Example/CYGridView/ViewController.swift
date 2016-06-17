@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     // MARK: - Properties
     var gridView: CYGridView!
+    var gridLayout: CYGridLayout!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -22,17 +23,17 @@ class ViewController: UIViewController {
         
         self.colorSingleBoxes()
         self.colorMultiBoxes()
+        //self.testAutolayout()
     }
     
     // MARK: - Init Views
     func initGridView() {
-        self.gridView = CYGridView(frame: self.view.bounds, contentInsets: UIEdgeInsetsMake(10, 20, 30, 40), vBoxSpace: 10, hBoxSpace: 20, vBoxCount: 10, hBoxCount: 5)
+        self.gridView = CYGridView(frame: self.view.bounds, contentInset: UIEdgeInsetsMake(50, 20, 30, 40), vBoxSpace: 10, hBoxSpace: 20, vBoxCount: 10, hBoxCount: 5)
         self.view.addSubview(self.gridView)
         
         self.gridView.translatesAutoresizingMaskIntoConstraints = false
         var constraints = NSLayoutConstraint.constraintsWithVisualFormat("|-[grid]-|", options: [NSLayoutFormatOptions(rawValue: 0)], metrics: nil, views: ["grid" : self.gridView])
         constraints.appendContentsOf(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[grid]-|", options: [NSLayoutFormatOptions(rawValue: 0)], metrics: nil, views: ["grid" : self.gridView]))
-        //self.gridView.addConstraints(constraints)
         NSLayoutConstraint.activateConstraints(constraints)
     }
     
@@ -66,6 +67,15 @@ class ViewController: UIViewController {
             box.backgroundColor = UIColor.blueColor()
             self.gridView.addManaged(view: box, from: NSIndexPath(forX: 1, forY: 5), to: NSIndexPath(forX: 4, forY: 7))
         }
+    }
+    
+    // MARK: - Using autolayout
+    
+    
+    func testAutolayout() {
+        self.gridLayout = CYGridLayout(target: self.view, contentInset: UIEdgeInsetsMake(20, 40, 80, 160), vBoxSpace: 10, hBoxSpace: 5, vBoxCount: 20, hBoxCount: 4)
+        
+        self.gridLayout.demo()
     }
 }
 
